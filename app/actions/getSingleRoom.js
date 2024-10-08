@@ -25,4 +25,4 @@ async function getSingleRoom(id) {
   }
 }
 
-export default getAllRooms;
+export default getSingleRoom;
