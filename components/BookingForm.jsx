@@ -1,8 +1,9 @@
-const BookingForm = () => {
+const BookingForm = ({ room }) => {
   return (
     <div className='mt-6'>
       <h2 className='text-xl font-bold'>Book this Room</h2>
       <form className='mt-4'>
+        <input type='hidden' name='room_id' value={room.$id} />
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           <div>
             <label htmlFor='check_in_date' className='block text-sm font-medium text-gray-700'>
@@ -16,6 +17,7 @@ const BookingForm = () => {
               required
             />
           </div>
+
           <div>
             <label htmlFor='check_in_time' className='block text-sm font-medium text-gray-700'>
               Check-In Time
@@ -28,6 +30,7 @@ const BookingForm = () => {
               required
             />
           </div>
+
           <div>
             <label htmlFor='check_out_date' className='block text-sm font-medium text-gray-700'>
               Check-Out Date
@@ -40,6 +43,7 @@ const BookingForm = () => {
               required
             />
           </div>
+
           <div>
             <label htmlFor='check_out_time' className='block text-sm font-medium text-gray-700'>
               Check-Out Time
