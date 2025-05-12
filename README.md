@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bookit App
+
+Bookit App is a meeting room application built with Next.js, Appwrite, and Tailwind CSS. It provides a modern interface for scheduling and managing meeting room reservations.
+
+## Features
+
+- User authentication and session management via Appwrite
+- Responsive UI styled with Tailwind CSS
+- Dynamic routing and server-side rendering with Next.js
+- Modular component-based architecture
+- Environment configuration via `.env`
+
+## Technologies Used
+
+- **Frontend**: Next.js, React
+- **Bankend**: Appwrite (for authentication and database)
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- Package manager
+- Appwrite instance
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ericstober/bookit-app.git
+cd bookit-app
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Configure environment variables:
+   Rename `.env.example` to `.env` and update with your Appwrite credentials and other necessary configurations
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+bookit-app/
+├── app/                # Next.js app directory
+├── assets/             # Static assets
+├── components/         # Reusable UI components
+├── config/             # Configuration files
+├── context/            # React Context for state management
+├── public/             # Public assets (e.g., images)
+├── .env.example        # Example environment variables
+├── middleware.js       # Middleware functions
+├── next.config.mjs     # Next.js configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+```
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License.
